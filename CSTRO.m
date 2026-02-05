@@ -36,17 +36,16 @@ switch flag
 
         % ---- Kinetic parameters (as in your original model) ----
         mu_max     = 0.120;     % 1/h
-        q_max_MEV = 1.9e-4;                 % g_MEV/g_X/h
-        K_MEV      = 5.42e-6;
-        Y_X_LAC    = 0.483;
-        Y_X_N      = 20.06;
-        Y_MEV_LAC  = 7.06e-4;
-        K_LAC      = 1.63;
-        K_N        = 8.84e-2;
-        K_LAC_MEV  = 13.23;
-        K_I_N      = 0.158;
-        K_I_N_MEV  = 9.65e-2;
-
+        q_max_MEV  = 1.9e-4;    % g_MEV/g_X/h
+        K_MEV      = 5.42e-6;   % (units per your model; used only in dC_MEV/dt)
+        Y_X_LAC    = 0.483;     % g_X / g_LAC
+        Y_X_N      = 20.06;     % g_X / g_N
+        Y_MEV_LAC  = 7.06e-4;   % g_MEV / g_LAC
+        K_LAC      = 1.63;      % g_LAC / g_X
+        K_N        = 8.84e-2;   % g_LAC / g_X
+        K_LAC_MEV  = 13.23;     % g_LAC / g_X
+        K_I_N      = 0.158;     % g_N / L
+        K_I_N_MEV  = 9.65e-2;   % g_N / L
 
         % ---- Geometry ----
         d  = 0.9;                   % m, reactor diameter
